@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-bg {
+  background-image: url("../img/фоннн2.png");
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+.full-screen{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.full-screen__video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.full-screen__body{
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 50px 15px;
+}
+
+.full-screen__title{
+  font-size: calc(14px + 28*100vw/1024);
+  font-weight: bold;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.full-screen__text{
+  font-size: calc(12px + 18*100vw/1024);
+  font-weight: normal;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.color-grey {
+  color: #222035;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.cv-header,
+.profile,
+.experience,
+.company-name {
+  font-family: "IBM Plex Serif", serif;
+}
+
+
+
+.cv-left {
+  background-color: #121823;
+  min-height: 30vh;
+  color: #f5ffffdf;
+}
+
+.cv-left a {
+  color: #9EB0AC;
+}
+
+.cv-left a:hover {
+  text-decoration: none;
+}
+
+.cv-left ul {
+  line-height: 175%;
+  padding-left: 30px;
+}
+
+.cv-left ul.contacts-block {
+  list-style: none;
+  padding-left: 0;
+}
+
+.cv-left .address {
+  font-style: italic;
+}
+
+.photo-block {
+}
+
+.contacts-block {
+}
+
+.cv-right {
+  background-color: #faffffdf;
+  min-height: 30vh;
+  color: #121823;
+}
+
+article {
+  padding: 20px;
+}
+
+.company-name {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.company-name i {
+  font-size: 0.8rem;
+  font-family: Aria, sans-serif;
+  text-transform: none;
+}
+
+.job-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.lines {
+  overflow: hidden;
+}
+
+.lines::before,
+.lines::after {
+  content: "";
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 3px;
+  background-color: #121823;
+  border: 1px solid #faffffdf;
+  vertical-align: middle;
+}
+
+.lines::before {
+  margin-left: -100%;
+}
+
+.lines::after {
+  margin-right: -100%;
+}
+
+@media (max-width: 991.98px) {
+  .cv-left h1,
+  .cv-left h2,
+  .cv-left h3,
+  .cv-left h4 {
+    font-size: 1.3rem;
+  }
+  .cv-left ul {
+    line-height: 150%;
+    padding-left: 25px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .container {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+  .cv {
+    margin-top: 0;
+  }
+
+  .photo-block img {
+    display: block;
+    max-width: 50%;
+    margin: 20px auto;
+  }
+}
